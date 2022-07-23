@@ -1,0 +1,56 @@
+    $colortitulos: #0B2545;
+    $colorletras: #EEF4ED;
+    $colorproductos: #8DA9C4;
+    $colorletras-productos: #13315C;
+    
+    .titulo-heladeras, .titulo-netbooks, .titulo-lavarropas{
+        font-size: x-large;
+        text-align: center;
+        margin-bottom: 30px;
+        color: $colorletras;
+        background-color: $colortitulos;
+    }
+
+    .flex-productos{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 100px 100px 100px;
+        text-align: center;
+        justify-content: center;
+        gap: 10px;
+        .box-heladeras, .box-netbooks{
+            border: 1px black;
+            border-radius: 15px;
+            width: 300px;
+            background-color: $colorproductos;
+            .texto-productos{
+                color: $colorletras-productos;
+                font-size: x-large;
+            }
+            .img-productos{
+                width: 100%;
+            }
+            .btn{
+                border: 1px solid black;
+                margin-bottom: 5px;
+                text-decoration: underline;
+                font-size: large;
+                background-color: $colortitulos;
+                color: $colorletras;
+            }
+        }
+    }
+
+    #flex-aspiradora{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
+        padding-bottom: 100px;
+        .box-aspi{
+            border: 3px solid black;
+            .img-aspiradora{
+                width: 100%
+            }
+        }
+    }

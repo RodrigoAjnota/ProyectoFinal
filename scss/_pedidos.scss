@@ -1,0 +1,23 @@
+    $colorletras: #EEF4ED;
+    $colorproductos: #8DA9C4;
+    $colorletras-productos: #13315C;
+    
+    .titulo-pedidos{
+        padding-bottom: 20px;
+        color: $colorletras;
+        text-align: center;
+    }
+    .flex-pedidos{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        gap: 20px;
+        .bordes-pedidos{
+            text-align: center;
+            background-color: $colorproductos;
+            border-radius: 10px;
+            .texto-productos{
+                color: $colorletras-productos;
+            }
+        }
+    }

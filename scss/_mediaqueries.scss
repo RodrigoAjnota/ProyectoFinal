@@ -1,0 +1,140 @@
+@media (max-width: 1440px){
+    .flex-todo{
+        .grid-listas{
+            grid-template-columns: repeat(2,1fr);
+        }
+    }
+    #formulario{
+        margin: 0 100px 0 100px;
+    }
+}
+
+@media (max-width: 1025px){
+    .box-heladeras, .box-netbooks{
+        .texto-productos{
+            font-size: x-large;
+        }
+    }
+    .flex-todo{
+        .grid-listas{
+            grid-template-columns: repeat(2,1fr);
+            .lista-productos{
+                width: 300px;
+                .texto-productos{
+                    font-size: x-large;
+                }
+            }
+        }
+    }
+    #formulario{
+        margin: 0 100px 0 100px;
+    }
+    .publicidades{
+        margin: 100px 50px 100px 50px;
+    }
+    .publicidades-otros{
+        padding: 50px 100px 50px 100px;
+    }
+    .bordes-pedidos{
+        margin: 0 50px 0 50px;
+    }
+    .historia{
+        font-size: x-large;
+    }
+    .nosotrosNV{
+        margin: 0 100px 0 100px;
+    }
+}
+
+@media (max-width: 769px){
+    .navbar{
+        .nav{
+            display: flex;
+            justify-content: center;
+        }
+    }
+    .flex-todo{
+        .grid-listas{
+            grid-template-columns: repeat(2,1fr);
+        }
+    }
+    #flex-aspiradora{
+        margin: 0 100px 0 100px;
+    }
+    .publicidades{
+        margin: 0 20px 50px 20px;
+    }
+    .publicidades-otros{
+        padding: 50px 20px 50px 20px;
+    }
+    #formulario{
+        margin: 0 10px 0 10px;
+    }
+    .flex-ayuda{
+        text-align: center;
+        h4{
+            font-size: medium;
+            padding-bottom: 10px;
+        }
+        .redes-catalogo{
+            padding-bottom: 10px;
+        }
+    }
+    .text-heladeras, .text-notebooks{
+        h2{
+            font-size: medium;
+        }
+        h3{
+            font-size: medium;
+        }
+        .btn{
+            padding: 3px 6px 3px 6px;
+            font-size: small;
+        }
+    }
+    .nosotrosNV{
+        margin: 0 50px 0 50px;
+    }
+}
+
+@media (max-width: 426px){
+    .box-heladeras, .box-netbooks{
+        .texto-productos{
+            font-size: larger;
+        }
+        .btn{
+            font-size: small;
+            margin-bottom: 10px;
+        }
+    }
+    .flex-todo{
+        .grid-listas{
+            grid-template-columns: repeat(1,1fr);
+            justify-items: center;
+            .lista-productos{
+                width: 250px;
+            }
+        } 
+    }  
+    .publicidades{
+        display: none;
+    }
+    .publicidades-otros{
+        padding-bottom: 0;
+        .publis{
+            border: 2px #0B2545;
+            .img-publicidad{
+                width: 0%;
+            }
+        }
+    }
+    .flex-ayuda{
+        flex-direction: column;
+    }
+    .historia{
+        font-size: large;
+    }
+    .nosotrosNV{
+        margin: 0 10px 0 10px;
+    }
+}

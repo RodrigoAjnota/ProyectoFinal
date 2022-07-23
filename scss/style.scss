@@ -1,0 +1,60 @@
+@import "estanteria";
+@import "publicidad";
+@import "productos";
+@import "formulario";
+@import "pedidos";
+@import "acercade";
+@import "mediaqueries";
+
+    $colormain: #134074;
+    $colorfooter: #0B2545;
+    $colorletras: #EEF4ED;
+    $colornavbar: #0B2545;
+    
+
+    .navbar {
+        background-color: $colornavbar;
+        .container{
+            justify-content: space-evenly;
+        }
+        li {
+            padding: 10px;
+            .nav-link {
+                font-size: xx-large;
+                color: $colorletras;
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .carousel{
+        padding: 20px 0 20px 0;
+    }
+    .espacio{
+        border-radius: 4px;
+        background-color: black;
+    }
+
+    main {
+        background-color: $colormain;
+    }
+
+    h2, h1{
+        text-decoration: underline;
+    }
+
+    .flex-ayuda{
+        display: flex;
+        justify-content: space-evenly;
+        background-color: $colornavbar;
+        h4{
+            font-size: x-large;
+            color: $colorletras;
+        }
+        .redes-catalogo{
+            display: inline-block;
+        }
+        .consultas{
+            color: $colorletras;
+        }
+    }

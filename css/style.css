@@ -1,5 +1,8 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@300&family=Titillium+Web:wght@300&family=Varela+Round&display=swap");
+/*Seccion de Inicio*/
 .titulo-heladeras, .titulo-netbooks, .titulo-lavarropas {
-  font-size: x-large;
+  font-family: "Varela Round", sans-serif;
   text-align: center;
   margin-bottom: 30px;
   color: #EEF4ED;
@@ -19,16 +22,21 @@
     background-color: #8DA9C4; }
     .flex-productos .box-heladeras .texto-productos, .flex-productos .box-netbooks .texto-productos {
       color: #13315C;
-      font-size: x-large; }
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      text-decoration: underline; }
+    .flex-productos .box-heladeras .precio-productos, .flex-productos .box-netbooks .precio-productos {
+      color: #EEF4ED;
+      font-family: "Titillium Web", sans-serif; }
     .flex-productos .box-heladeras .img-productos, .flex-productos .box-netbooks .img-productos {
       width: 100%; }
     .flex-productos .box-heladeras .btn, .flex-productos .box-netbooks .btn {
       border: 1px solid black;
       margin-bottom: 5px;
-      text-decoration: underline;
-      font-size: large;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
       background-color: #0B2545;
       color: #EEF4ED; }
+      .flex-productos .box-heladeras .btn:hover, .flex-productos .box-netbooks .btn:hover {
+        background-color: #11335e73; }
 
 #flex-aspiradora {
   display: flex;
@@ -41,31 +49,16 @@
     #flex-aspiradora .box-aspi .img-aspiradora {
       width: 100%; }
 
-.publicidades {
-  border: 2px solid black;
-  margin: 100px 200px 100px 200px; }
-  .publicidades .publi {
-    width: 100%; }
-    .publicidades .publi .img-publicidad {
-      width: 100%; }
-
-.publicidades-otros {
-  padding: 50px 150px 50px 150px;
-  text-align: center;
-  width: 100%; }
-  .publicidades-otros .publis {
-    width: 100%;
-    border: 2px solid black; }
-    .publicidades-otros .publis .img-publicidad {
-      width: 100%; }
-
+/*Sección de Productos*/
 .flex-todo {
   display: flex;
   justify-content: space-evenly;
   padding-bottom: 100px; }
   .flex-todo .titulo-productos {
     text-align: center;
-    padding-bottom: 20px;
+    margin: 30px 0 50px 0;
+    background-color: #0B2545;
+    font-family: "Varela Round", sans-serif;
     color: #EEF4ED; }
   .flex-todo .grid-listas {
     display: grid;
@@ -76,43 +69,100 @@
       border: 3px black;
       border-radius: 15px;
       background-color: #8DA9C4;
-      color: #13315C;
       width: 350px; }
       .flex-todo .grid-listas .lista-productos .texto-productos {
-        color: #13315C; }
+        color: #13315C;
+        font-size: x-large;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-decoration: underline; }
+      .flex-todo .grid-listas .lista-productos .precio-productos {
+        color: #EEF4ED;
+        font-size: x-large;
+        font-family: "Titillium Web", sans-serif; }
       .flex-todo .grid-listas .lista-productos .img-heladeras {
         width: 100%; }
       .flex-todo .grid-listas .lista-productos .btn {
         border: 1px solid black;
-        text-decoration: underline;
+        margin-bottom: 5px;
+        font-size: medium;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
         background-color: #0B2545;
-        color: #EEF4ED;
-        margin-bottom: 10px; }
+        color: #EEF4ED; }
+        .flex-todo .grid-listas .lista-productos .btn:hover {
+          background-color: #11335e73; }
 
+.navbar {
+  background-color: #0B2545; }
+  .navbar .container {
+    justify-content: space-evenly; }
+    .navbar .container .nav .nav-item {
+      padding: 20px; }
+      .navbar .container .nav .nav-item .nav-link {
+        font-size: x-large;
+        font-family: "Varela Round", sans-serif;
+        color: #EEF4ED;
+        text-decoration: none;
+        padding: 0; }
+        .navbar .container .nav .nav-item .nav-link:hover {
+          border-bottom: 1px solid #EEF4ED; }
+
+.carousel {
+  padding: 20px 0 20px 0; }
+
+.espacio {
+  border-radius: 4px;
+  background-color: black; }
+
+/*Publicidades de las paginas*/
+.publicidades {
+  margin: 100px 200px 100px 200px; }
+  .publicidades .publi {
+    width: 100%;
+    border: 2px solid black; }
+    .publicidades .publi .img-publicidad {
+      width: 100%; }
+
+.publicidades-otros {
+  padding: 50px 200px 50px 200px; }
+  .publicidades-otros .publis {
+    width: 100%;
+    border: 2px solid black; }
+    .publicidades-otros .publis .img-publicidad {
+      width: 100%; }
+
+/*Sección de Formulario*/
 .titulo-form {
   text-align: center;
   text-decoration: underline;
   color: #EEF4ED;
-  padding-bottom: 10px; }
+  padding: 20px;
+  font-family: "Varela Round", sans-serif; }
 
 #formulario {
-  margin: 0 400px 0 400px;
+  margin: 20px 300px 0 300px;
   border: 2px solid black;
   border-radius: 10px;
-  padding: 0 20px 10px 20px;
+  padding: 0 20px 20px 20px;
   background-color: #8DA9C4; }
   #formulario .box {
     padding-top: 10px; }
+    #formulario .box .row .form-label {
+      font-family: Verdana, Geneva, Tahoma, sans-serif; }
     #formulario .box .btn {
       border: 1px solid black;
       text-decoration: underline;
       background-color: #0B2545;
       color: #EEF4ED; }
+      #formulario .box .btn:hover {
+        background-color: #11335e73; }
 
+/*Sección de Pedidos*/
 .titulo-pedidos {
-  padding-bottom: 20px;
+  padding: 20px 0 20px 0;
   color: #EEF4ED;
-  text-align: center; }
+  text-align: center;
+  font-family: "Varela Round", sans-serif;
+  text-decoration: underline; }
 
 .flex-pedidos {
   display: flex;
@@ -123,20 +173,29 @@
     text-align: center;
     background-color: #8DA9C4;
     border-radius: 10px; }
+    .flex-pedidos .bordes-pedidos .img-pedidos {
+      width: 100%; }
     .flex-pedidos .bordes-pedidos .texto-productos {
-      color: #13315C; }
+      color: #13315C;
+      font-size: x-large;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      text-decoration: underline; }
 
-.historia {
-  font-size: xx-large;
-  padding: 20px;
-  background-color: #8DA9C4;
-  color: #13315C; }
-
+/*Sección de Acerca de*/
 .nosotrosNV {
-  text-align: center;
   margin: 0 200px 0px 200px;
-  color: #EEF4ED;
-  padding: 20px 0 40px 0; }
+  padding-top: 20px; }
+  .nosotrosNV .titulo-nosotros {
+    text-align: center;
+    color: #EEF4ED;
+    font-family: "Varela Round", sans-serif;
+    padding-bottom: 20px;
+    text-decoration: underline; }
+  .nosotrosNV .historia {
+    font-size: x-large;
+    padding: 20px;
+    color: #EEF4ED;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; }
 
 @media (max-width: 1440px) {
   .flex-todo .grid-listas {
@@ -153,6 +212,8 @@
       width: 300px; }
       .flex-todo .grid-listas .lista-productos .texto-productos {
         font-size: x-large; }
+  .flex-ayuda h4, .flex-ayuda .consultas {
+    font-size: large; }
   #formulario {
     margin: 0 100px 0 100px; }
   .publicidades {
@@ -182,32 +243,36 @@
     margin: 0 10px 0 10px; }
   .flex-ayuda {
     text-align: center; }
-    .flex-ayuda h4 {
+    .flex-ayuda h4, .flex-ayuda .consultas {
       font-size: medium;
       padding-bottom: 10px; }
     .flex-ayuda .redes-catalogo {
       padding-bottom: 10px; }
-  .text-heladeras h2, .text-notebooks h2 {
-    font-size: medium; }
-  .text-heladeras h3, .text-notebooks h3 {
-    font-size: medium; }
-  .text-heladeras .btn, .text-notebooks .btn {
-    padding: 3px 6px 3px 6px;
-    font-size: small; }
+  .titulo-heladeras, .titulo-netbooks, .titulo-lavarropas {
+    font-size: xx-large; }
   .nosotrosNV {
     margin: 0 50px 0 50px; } }
 
-@media (max-width: 426px) {
-  .box-heladeras .texto-productos, .box-netbooks .texto-productos {
-    font-size: larger; }
+@media (max-width: 573px) {
+  .titulo-heladeras, .titulo-netbooks, .titulo-lavarropas {
+    font-size: xx-large; }
+  .box-heladeras .texto-productos, .box-heladeras .precio-productos, .box-netbooks .texto-productos, .box-netbooks .precio-productos {
+    font-size: x-large; }
   .box-heladeras .btn, .box-netbooks .btn {
-    font-size: small;
+    font-size: medium;
     margin-bottom: 10px; }
+  .flex-todo .titulo-productos {
+    font-size: x-large; }
   .flex-todo .grid-listas {
     grid-template-columns: repeat(1, 1fr);
     justify-items: center; }
     .flex-todo .grid-listas .lista-productos {
       width: 250px; }
+      .flex-todo .grid-listas .lista-productos .texto-productos, .flex-todo .grid-listas .lista-productos .precio-productos {
+        font-size: x-large; }
+      .flex-todo .grid-listas .lista-productos .btn {
+        font-size: medium;
+        margin-bottom: 10px; }
   .publicidades {
     display: none; }
   .publicidades-otros {
@@ -218,43 +283,62 @@
         width: 0%; }
   .flex-ayuda {
     flex-direction: column; }
+    .flex-ayuda h4, .flex-ayuda .consultas {
+      font-size: large; }
+  .titulo-pedidos {
+    font-size: x-large; }
+  .flex-pedidos .bordes-pedidos .texto-productos {
+    font-size: larger; }
+  .flex-pedidos .bordes-pedidos h3 {
+    font-size: large; }
   .historia {
     font-size: large; }
   .nosotrosNV {
     margin: 0 10px 0 10px; } }
 
-.navbar {
-  background-color: #0B2545; }
-  .navbar .container {
-    justify-content: space-evenly; }
-  .navbar li {
-    padding: 10px; }
-    .navbar li .nav-link {
-      font-size: xx-large;
-      color: #EEF4ED;
-      text-decoration: underline; }
+@media (max-width: 375px) {
+  .titulo-heladeras, .titulo-netbooks, .titulo-lavarropas {
+    font-size: larger; }
+  .box-heladeras .texto-productos, .box-heladeras .precio-productos, .box-netbooks .texto-productos, .box-netbooks .precio-productos {
+    font-size: medium; }
+  .box-heladeras .btn, .box-netbooks .btn {
+    font-size: xx-small; }
+  .flex-ayuda h4, .flex-ayuda .consultas {
+    font-size: medium; }
+  .flex-todo .grid-listas .lista-productos {
+    width: 200px; }
+    .flex-todo .grid-listas .lista-productos .texto-productos, .flex-todo .grid-listas .lista-productos .precio-productos {
+      font-size: larger; }
+    .flex-todo .grid-listas .lista-productos .btn {
+      font-size: small; }
+  .titulo-pedidos {
+    font-size: larger; }
+  .flex-pedidos {
+    margin: 0 20px 0 20px; }
+    .flex-pedidos .bordes-pedidos .texto-productos {
+      font-size: large; }
+    .flex-pedidos .bordes-pedidos h3 {
+      font-size: medium; }
+  span {
+    font-size: medium; } }
 
-.carousel {
-  padding: 20px 0 20px 0; }
-
-.espacio {
-  border-radius: 4px;
-  background-color: black; }
+* {
+  padding: 0;
+  margin: 0; }
 
 main {
   background-color: #134074; }
-
-h2, h1 {
-  text-decoration: underline; }
 
 .flex-ayuda {
   display: flex;
   justify-content: space-evenly;
   background-color: #0B2545; }
   .flex-ayuda h4 {
-    font-size: x-large;
-    color: #EEF4ED; }
+    color: #EEF4ED;
+    font-family: "Varela Round", sans-serif; }
   .flex-ayuda .redes-catalogo {
     display: inline-block; }
   .flex-ayuda .consultas {
-    color: #EEF4ED; }
+    color: #EEF4ED;
+    text-decoration: none;
+    font-family: "Varela Round", sans-serif; }

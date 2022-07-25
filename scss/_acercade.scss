@@ -1,16 +1,23 @@
     $colortitulo: #EEF4ED;
-    $colorletras: #13315C;
+    $colorletras: #EEF4ED;
+    $fontTextos: Verdana, Geneva, Tahoma, sans-serif;
+    $fontTitulos: 'Varela Round', sans-serif;
     
-    .historia{
-        font-size: xx-large;
-        padding: 20px;
-        background-color: #8DA9C4;
-        color: $colorletras;
-    }
+    /*Sección de Acerca de*/
     .nosotrosNV{
-        text-align: center;
         margin: 0 200px 0px 200px;
-        color: $colortitulo;
-        padding: 20px 0 40px 0;
-        
+        padding-top: 20px;
+        .titulo-nosotros{
+            text-align: center;
+            color: $colortitulo;
+            font-family: $fontTitulos;
+            padding-bottom: 20px;
+            text-decoration: underline;
+        }
+        .historia{
+            font-size: x-large;
+            padding: 20px;
+            color: $colorletras;
+            font-family: $fontTextos;
+        }
     }

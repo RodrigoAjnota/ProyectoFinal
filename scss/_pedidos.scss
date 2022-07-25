@@ -1,11 +1,16 @@
     $colorletras: #EEF4ED;
     $colorproductos: #8DA9C4;
     $colorletras-productos: #13315C;
+    $fontTextos: Verdana, Geneva, Tahoma, sans-serif;
+    $fontTitulos: 'Varela Round', sans-serif;
     
+    /*Sección de Pedidos*/
     .titulo-pedidos{
-        padding-bottom: 20px;
+        padding: 20px 0 20px 0;
         color: $colorletras;
         text-align: center;
+        font-family: $fontTitulos;
+        text-decoration: underline;
     }
     .flex-pedidos{
         display: flex;
@@ -16,8 +21,14 @@
             text-align: center;
             background-color: $colorproductos;
             border-radius: 10px;
+            .img-pedidos{
+                width: 100%;
+            }
             .texto-productos{
                 color: $colorletras-productos;
+                font-size: x-large;
+                font-family: $fontTextos;
+                text-decoration: underline;
             }
         }
     }

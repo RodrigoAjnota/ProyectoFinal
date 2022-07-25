@@ -1,18 +1,16 @@
+    /*Publicidades de las paginas*/
     .publicidades{
-        border: 2px solid black;
         margin: 100px 200px 100px 200px;
         .publi{
             width: 100%;
+            border: 2px solid black;
             .img-publicidad{
                 width: 100%;
             }
         }
     }
-
     .publicidades-otros{
-        padding: 50px 150px 50px 150px;
-        text-align: center;
-        width: 100%;
+        padding: 50px 200px 50px 200px;
         .publis{
             width: 100%;
             border: 2px solid black;

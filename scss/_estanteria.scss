@@ -2,15 +2,18 @@
     $colorletras: #EEF4ED;
     $colorproductos: #8DA9C4;
     $colorletras-productos: #13315C;
+    $fontTextos: Verdana, Geneva, Tahoma, sans-serif;
+    $fontPrecios: 'Titillium Web', sans-serif;
+    $fontTitulos: 'Varela Round', sans-serif;
     
+    /*Seccion de Inicio*/
     .titulo-heladeras, .titulo-netbooks, .titulo-lavarropas{
-        font-size: x-large;
+        font-family: $fontTitulos;
         text-align: center;
         margin-bottom: 30px;
         color: $colorletras;
         background-color: $colortitulos;
     }
-
     .flex-productos{
         display: flex;
         flex-wrap: wrap;
@@ -25,7 +28,12 @@
             background-color: $colorproductos;
             .texto-productos{
                 color: $colorletras-productos;
-                font-size: x-large;
+                font-family: $fontTextos;
+                text-decoration: underline;
+            }
+            .precio-productos{
+                color: $colorletras;
+                font-family: $fontPrecios;
             }
             .img-productos{
                 width: 100%;
@@ -33,14 +41,15 @@
             .btn{
                 border: 1px solid black;
                 margin-bottom: 5px;
-                text-decoration: underline;
-                font-size: large;
+                font-family: $fontTextos;
                 background-color: $colortitulos;
                 color: $colorletras;
+                &:hover{
+                    background-color: #11335e73;
+                }
             }
         }
     }
-
     #flex-aspiradora{
         display: flex;
         justify-content: center;
@@ -53,4 +62,55 @@
                 width: 100%
             }
         }
+    }
+
+    /*Sección de Productos*/
+    .flex-todo{
+        display: flex;
+        justify-content: space-evenly;
+        padding-bottom: 100px;
+        .titulo-productos{
+            text-align: center;
+            margin: 30px 0 50px 0;
+            background-color: $colortitulos;
+            font-family: $fontTitulos;
+            color: $colorletras;
+        }
+        .grid-listas{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 2rem;
+            text-align: center;
+            .lista-productos{
+                border: 3px black;
+                border-radius: 15px;
+                background-color: $colorproductos;
+                width: 350px;
+                .texto-productos{
+                    color: $colorletras-productos;
+                    font-size: x-large;
+                    font-family: $fontTextos;
+                    text-decoration: underline;
+                }
+                .precio-productos{
+                    color: $colorletras;
+                    font-size: x-large;
+                    font-family: $fontPrecios;
+                }
+                .img-heladeras{
+                    width: 100%;
+                }
+                .btn{
+                    border: 1px solid black;
+                    margin-bottom: 5px;
+                    font-size: medium;
+                    font-family: $fontTextos;
+                    background-color: $colortitulos;
+                    color: $colorletras;
+                    &:hover{
+                        background-color: #11335e73;
+                    }
+                }
+            }
+        }    
     }

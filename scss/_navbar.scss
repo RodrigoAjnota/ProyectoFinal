@@ -1,0 +1,32 @@
+    $colornavbar: #0B2545;
+    $colorletras: #EEF4ED;
+    $fontHeader: 'Varela Round', sans-serif;
+
+    .navbar{
+        background-color: $colornavbar;
+        .container{
+            justify-content: space-evenly;
+            .nav{
+                .nav-item{
+                    padding: 20px;
+                    .nav-link{
+                        font-size: x-large;
+                        font-family: $fontHeader;
+                        color: $colorletras;
+                        text-decoration: none;
+                        padding: 0;
+                        &:hover{
+                            border-bottom: 1px solid $colorletras;
+                        }
+                    }
+                }
+            }
+        }    
+    }
+    .carousel{
+        padding: 20px 0 20px 0;
+    }
+    .espacio{
+        border-radius: 4px;
+        background-color: black;
+    }

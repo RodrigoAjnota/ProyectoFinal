@@ -1,27 +1,38 @@
     $colorboton: #0B2545;
     $colorletras: #EEF4ED;
-    $colorfondo: #8DA9C4;    
+    $colorfondo: #8DA9C4;
+    $fontTextos: Verdana, Geneva, Tahoma, sans-serif;
+    $fontTitulos: 'Varela Round', sans-serif;    
     
+    /*Sección de Formulario*/
     .titulo-form{
         text-align: center;
         text-decoration: underline;
         color: $colorletras;
-        padding-bottom: 10px;
+        padding: 20px;
+        font-family: $fontTitulos;
     }
-
     #formulario{
-        margin: 0 400px 0 400px;
+        margin: 20px 300px 0 300px;
         border: 2px solid black;
         border-radius: 10px;
-        padding: 0 20px 10px 20px;
+        padding: 0 20px 20px 20px;
         background-color: $colorfondo;
         .box{
             padding-top: 10px;
+            .row{
+                .form-label{
+                    font-family: $fontTextos;
+                }
+            }
             .btn{
                 border: 1px solid black;
                 text-decoration: underline;
                 background-color: $colorboton;
                 color: $colorletras;
+                &:hover{
+                    background-color: #11335e73;
+                }
             }
         }
     }
